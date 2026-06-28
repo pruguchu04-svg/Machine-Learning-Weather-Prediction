@@ -1,8 +1,8 @@
 # Weather Temperature Prediction using Linear Regression
 
-A simple linear regression project that predicts the **Maximum Temperature (MaxTemp)** of a day using the **Minimum Temperature (MinTemp)** as a predictor.
+A simple linear regression project that predicts the Maximum Temperature (MaxTemp) of a day using the Minimum Temperature (MinTemp) as a predictor.
 
-## 📌 Overview
+## Overview
 
 Regression analysis is a predictive modelling technique used to investigate the relationship between a dependent variable and one or more independent variables. Linear regression is commonly applied in fields such as:
 
@@ -11,11 +11,11 @@ Regression analysis is a predictive modelling technique used to investigate the 
 - Pricing strategy for goods
 - Astronomy and other scientific measurements
 
-This project applies **simple linear regression** to weather data, exploring whether the minimum temperature of a day can predict its maximum temperature.
+This project applies simple linear regression to weather data, exploring whether the minimum temperature of a day can predict its maximum temperature.
 
 ##  Dataset
 
-The dataset (`weather_dataset.csv`) contains **366 daily weather records** with **22 features**.
+The dataset (`weather_dataset.csv`) contains 366 daily weather records** with 22 features.
 
 For this analysis, only two columns are used:
 - **Independent variable (X):** `MinTemp`
@@ -41,7 +41,7 @@ For this analysis, only two columns are used:
 
 3. **Model Training**
    - Trained a `LinearRegression` model on the training data
-   - Retrieved the learned **intercept** and **coefficient**
+   - Retrieved the learned intercept and coefficient
 
 4. **Prediction**
    - Generated predictions on the test set
@@ -51,18 +51,17 @@ For this analysis, only two columns are used:
 5. **Evaluation**
    - Assessed performance using Mean Absolute Error (MAE), Mean Squared Error (MSE), and Root Mean Squared Error (RMSE)
 
-## 📊 Results
+## Results
 
-| Metric | Value |
-| Intercept | 14.56 |
-| Coefficient | 0.82 |
-| Mean Absolute Error (MAE) | 3.51 |
-| Mean Squared Error (MSE) | 17.01 |
-| Root Mean Squared Error (RMSE) | 4.12 |
+ Intercept = 14.56 
+ Coefficient = 0.82 
+ Mean Absolute Error (MAE) =  3.51 
+ Mean Squared Error (MSE) = 17.01 
+ Root Mean Squared Error (RMSE) = 4.12 
 
 
 ##  Conclusion
 
-The model reveals a **positive relationship** between minimum and maximum temperature — warmer nights tend to be followed by warmer days. With an average prediction error of around **4°C (RMSE)**, the model captures the general trend reasonably well but is only **moderately accurate**, since `MaxTemp` is influenced by many other factors (humidity, wind, cloud cover, pressure, season, etc.) not included in this single-feature model.
+The model reveals a positive relationship between minimum and maximum temperature — warmer nights tend to be followed by warmer days. With an average prediction error of around 4°C (RMSE), the model captures the general trend reasonably well but is only moderately accurate, since `MaxTemp` is influenced by many other factors (humidity, wind, cloud cover, pressure, season, etc.) not included in this single-feature model.
 
 
